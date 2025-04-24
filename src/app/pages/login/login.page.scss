@@ -1,0 +1,26 @@
+.pageLogin {
+    // background-image: url(../../../assets/backLogin.png);
+    // background-image: url(../../../assets/gifLogin.gif);
+    // background-image: url(../../../assets/gifLogin2.gif);
+    // background-image: url(../../../assets/gifLogin3.gif);
+    background-image: url(../../../assets/gifLogin4.gif);
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    background-color: #008bb7;
+
+    &__body {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 70%;
+
+        &__card {
+            width: 100%;
+        }
+    }
+}
