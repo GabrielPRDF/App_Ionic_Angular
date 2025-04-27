@@ -4,11 +4,16 @@ import { TabsPage } from './tabs.page';
 
 const routes: Routes = [
   {
-    path: 'tabs',
+    path: '',
+    redirectTo: 'character',
+    pathMatch: 'full'
+  },
+  {
+    path: '',
     component: TabsPage,
     children: [
       {
-        path: '',
+        path: 'character',
         loadChildren: () => import('../character/character.module').then(m => m.CharacterPageModule)
       },
       {
@@ -21,16 +26,11 @@ const routes: Routes = [
       },
       {
         path: '',
-        redirectTo: '/tabs/tab3',
+        redirectTo: '/tabs/character',
         pathMatch: 'full'
       }
     ]
-  },
-  // {
-  //   path: '',
-  //   redirectTo: '/tabs/tab2',
-  //   pathMatch: 'full'
-  // }
+  }
 ];
 
 @NgModule({
