@@ -17,6 +17,6 @@ export class LoginPage implements OnInit {
   }
 
   public actionLogin():void {
-    this.router.navigate(["/home"]);
+    this.router.navigate(["tabs"]);
   }
 }
