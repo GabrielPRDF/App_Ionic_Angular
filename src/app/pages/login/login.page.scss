@@ -10,17 +10,52 @@
     background-size: contain;
     background-position: bottom;
     background-color: #008bb7;
-
+    
     &__body {
         height: 100%;
         width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        opacity: 70%;
-
+          
+        &__title {
+            height: 30%;
+            background-image: url(../../../assets/textLogin.png);
+            background-size: 75%;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            animation:  blink 0.2s steps(1, end) infinite;
+            transform: rotateX(0deg) rotateY(0deg) rotate3d(1, 1, 1, 18deg);
+        }
+        
         &__card {
+            height: 35%;
+            opacity: 70%;
             width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            &__conteudo {
+                width: 100%;
+
+                &--button {
+                  ion-button {
+                    width: 100%;
+                    margin: 0;
+                    padding: 0 16px 20px;
+                  }
+                }
+            }
         }
     }
+
+    @keyframes blink {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
 }
