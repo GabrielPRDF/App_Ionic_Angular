@@ -10,7 +10,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
-    "b:a": "npm run build && npx cap sync android"
+    "b:a": "npm run build && npx cap sync android",
+    "android": "ionic capacitor run android"
   },
   "private": true,
   "dependencies": {
@@ -22,7 +23,7 @@
     "@angular/platform-browser": "^19.0.0",
     "@angular/platform-browser-dynamic": "^19.0.0",
     "@angular/router": "^19.0.0",
-    "@capacitor/android": "^7.2.0",
+    "@capacitor/android": "7.2.0",
     "@capacitor/app": "7.0.1",
     "@capacitor/core": "7.2.0",
     "@capacitor/haptics": "7.0.1",
@@ -45,6 +46,7 @@
     "@angular/cli": "^19.0.0",
     "@angular/compiler-cli": "^19.0.0",
     "@angular/language-service": "^19.0.0",
+    "@capacitor/assets": "^3.0.5",
     "@capacitor/cli": "7.2.0",
     "@ionic/angular-toolkit": "^12.0.0",
     "@types/jasmine": "~5.1.0",
