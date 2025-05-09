@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {CaracterService} from "../../../../services/caracter.service";
 
 @Component({
   selector: 'app-character',
@@ -8,6 +9,11 @@ import { Component } from '@angular/core';
 })
 export class CharacterPage {
 
-  constructor() {}
+  constructor(
+    private service: CaracterService
+  ) {}
 
+  getCaracter(){
+    this.service.getCaracter();
+  }
 }
