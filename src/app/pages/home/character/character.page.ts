@@ -8,12 +8,16 @@ import {CaracterService} from "../../../../services/caracter.service";
   standalone: false,
 })
 export class CharacterPage {
+  public caracters: any;
 
   constructor(
     private service: CaracterService
-  ) {}
+  ) {
+    this.getCaracter();
+  }
 
-  getCaracter(){
-    this.service.getCaracter();
+  async getCaracter(){
+    this.caracters = await this.service.getCaracter();
+    console.log(this.caracters);
   }
 }

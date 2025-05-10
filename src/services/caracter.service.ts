@@ -9,7 +9,8 @@ export class CaracterService {
   ){}
 
   public async getCaracter(){
-    const result =  await firstValueFrom(this.http.get("https://rickandmortyapi.com/api/character"));
-    console.log(result);
+    /** const result =  await firstValueFrom(this.http.get("https://rickandmortyapi.com/api/character"));
+    console.log(result); **/
+    return await firstValueFrom(this.http.get("https://rickandmortyapi.com/api/character"));
   }
 }

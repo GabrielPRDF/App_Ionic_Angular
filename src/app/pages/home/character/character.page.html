@@ -9,5 +9,14 @@
 <ion-content [fullscreen]="true">
   <h1>Select one caracter:</h1>
 
-  <ion-button (click)="getCaracter()">Caracter</ion-button>
+<!--  <ion-button (click)="getCaracter()">Caracter</ion-button>-->
+
+  <div *ngIf="caracters" class="caracter__card">
+    <div *ngFor="let carac of caracters.results">
+      <div class="caracter__card__item">
+        <img [src]="carac.image">
+<!--        <h2>{{carac.name}}</h2>-->
+      </div>
+    </div>
+  </div>
 </ion-content>
