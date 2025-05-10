@@ -2,9 +2,9 @@ import { IonicModule } from '@ionic/angular';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { Tab3Page } from './tab3.page';
-import { Tab3PageRoutingModule } from './tab3-routing.module';
+import {AbountPageRoutingModule} from './abount-routing.module';
 import { HomePageModule } from '../home.module';
+import {AbountPage} from "./abount.page";
 
 @NgModule({
   imports: [
@@ -12,8 +12,8 @@ import { HomePageModule } from '../home.module';
     CommonModule,
     FormsModule,
     HomePageModule,
-    Tab3PageRoutingModule
+    AbountPageRoutingModule
   ],
-  declarations: [Tab3Page]
+  declarations: [AbountPage]
 })
-export class Tab3PageModule {}
+export class AbountPageModule {}
