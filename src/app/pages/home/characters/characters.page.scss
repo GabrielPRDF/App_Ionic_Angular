@@ -1,0 +1,41 @@
+ion-header {
+  ion-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+.caracter {
+  &__title {
+    margin: 0;
+    padding: 10px 0 20px;
+
+    h2 {
+      margin: 0;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bolder;
+    }
+  }
+
+  &__card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(110px, auto));
+
+    &__item {
+      padding: 10px;
+
+      img {
+        border-radius: 50%;
+      }
+
+      &--name {
+        margin: 0;
+        font-weight: bold;
+        text-align: center;
+        font-size: 0.6rem;
+      }
+    }
+  }
+}
+

@@ -2,9 +2,9 @@ import { IonicModule } from '@ionic/angular';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { CharacterPage } from './character.page';
-import { CharacterPageRoutingModule } from './character-routing.module';
+import { CharactersPageRoutingModule } from './characters-routing.module';
 import { HomePageModule } from '../home.module';
+import {CharactersPage} from "./characters.page";
 
 @NgModule({
   imports: [
@@ -12,8 +12,8 @@ import { HomePageModule } from '../home.module';
     CommonModule,
     FormsModule,
     HomePageModule,
-    CharacterPageRoutingModule
+    CharactersPageRoutingModule
   ],
-  declarations: [CharacterPage]
+  declarations: [CharactersPage]
 })
-export class CharacterPageModule {}
+export class CharactersPageModule {}

@@ -3,11 +3,11 @@ import {CaracterService} from "../../../../services/caracter.service";
 
 @Component({
   selector: 'app-character',
-  templateUrl: 'character.page.html',
-  styleUrls: ['character.page.scss'],
+  templateUrl: 'characters.page.html',
+  styleUrls: ['characters.page.scss'],
   standalone: false,
 })
-export class CharacterPage {
+export class CharactersPage {
   public caracters: any;
 
   constructor(
@@ -19,5 +19,9 @@ export class CharacterPage {
   async getCaracter(){
     this.caracters = await this.service.getCaracter();
     console.log(this.caracters);
+  }
+
+  selectCaracter(carac: any){
+    console.log(carac);
   }
 }
