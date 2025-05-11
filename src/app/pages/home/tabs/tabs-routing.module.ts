@@ -18,7 +18,11 @@ const routes: Routes = [
       },
       {
         path: 'location',
-        loadChildren: () => import('../location/location.module').then(m => m.LocationPageModule)
+        loadChildren: () => import('../locations/locations.module').then(m => m.LocationsPageModule)
+      },
+      {
+        path: 'episodes',
+        loadChildren: () => import('../episodes/episodes.module').then(m => m.EpisodesPageModule)
       },
       {
         path: 'abount',

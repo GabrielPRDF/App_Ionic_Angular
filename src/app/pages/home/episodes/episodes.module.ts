@@ -2,9 +2,9 @@ import { IonicModule } from '@ionic/angular';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { LocationPage } from './location.page';
+import { EpisodesPage } from './episodes.page';
 import { HomePageModule } from '../home.module';
-import {LocationPageRoutingModule} from "./location-routing.module";
+import {EpisodesPageRoutingModule} from "./episodes-routing.module";
 
 @NgModule({
   imports: [
@@ -12,8 +12,8 @@ import {LocationPageRoutingModule} from "./location-routing.module";
     CommonModule,
     FormsModule,
     HomePageModule,
-    LocationPageRoutingModule
+    EpisodesPageRoutingModule
   ],
-  declarations: [LocationPage]
+  declarations: [EpisodesPage]
 })
-export class LocationPageModule {}
+export class EpisodesPageModule {}
