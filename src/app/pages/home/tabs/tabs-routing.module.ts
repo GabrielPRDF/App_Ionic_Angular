@@ -17,8 +17,8 @@ const routes: Routes = [
         loadChildren: () => import('../characters/characters.module').then(m => m.CharactersPageModule)
       },
       {
-        path: 'tab2',
-        loadChildren: () => import('../tab2/tab2.module').then(m => m.Tab2PageModule)
+        path: 'location',
+        loadChildren: () => import('../location/location.module').then(m => m.LocationPageModule)
       },
       {
         path: 'abount',
