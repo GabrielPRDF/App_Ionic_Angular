@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Episodes
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="episode__title">
+    <h2>Select</h2>
+  </div>
+
+
+  <div *ngIf="episodes" class="episode__card">
+    <div *ngFor="let epi of episodes.results" class="episode__card__item">
+      <ion-row (click)="selectEpisode(epi)" >
+        <ion-icon name="videocam-outline"></ion-icon>
+        <p>name: {{epi.name}}</p>
+        <p>type: {{epi.type}}</p>
+      </ion-row>
+    </div>
+  </div>
+</ion-content>

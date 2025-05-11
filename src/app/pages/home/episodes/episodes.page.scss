@@ -1,0 +1,46 @@
+ion-header {
+  ion-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+.episode {
+  &__title {
+    margin: 0;
+    padding: 10px 0 20px;
+
+    h2 {
+      margin: 0;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bolder;
+    }
+  }
+
+  &__card {
+    &__item {
+      display: flex;
+      padding: 10px;
+      align-items: center;
+      text-align: center;
+
+      ion-row {
+        gap: 15px
+      }
+
+      ion-icon {
+        font-size: 24px;
+        height: auto;
+      }
+
+      &--name {
+        margin: 0;
+        font-weight: bold;
+        text-align: center;
+        font-size: 0.6rem;
+      }
+    }
+  }
+}
+

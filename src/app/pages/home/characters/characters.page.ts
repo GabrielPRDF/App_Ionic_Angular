@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {CaracterService} from "../../../../services/caracter.service";
+import {HomeServices} from "../../../../services/home.services";
 
 @Component({
   selector: 'app-character',
@@ -11,7 +11,7 @@ export class CharactersPage {
   public caracters: any;
 
   constructor(
-    private service: CaracterService
+    private service: HomeServices
   ) {
     this.getCaracter();
   }

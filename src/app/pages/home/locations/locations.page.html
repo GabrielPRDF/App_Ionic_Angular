@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Locations
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="location__title">
+    <h2>Select</h2>
+  </div>
+
+
+  <div *ngIf="locations" class="location__card">
+    <div *ngFor="let loc of locations.results" class="location__card__item">
+      <ion-row (click)="selectLocation(loc)" >
+        <ion-icon name="planet-outline"></ion-icon>
+        <p>name: {{loc.name}}</p>
+        <p>type: {{loc.type}}</p>
+      </ion-row>
+    </div>
+  </div>
+</ion-content>

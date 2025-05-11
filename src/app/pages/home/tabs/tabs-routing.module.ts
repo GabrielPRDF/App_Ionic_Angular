@@ -17,12 +17,16 @@ const routes: Routes = [
         loadChildren: () => import('../characters/characters.module').then(m => m.CharactersPageModule)
       },
       {
-        path: 'tab2',
-        loadChildren: () => import('../tab2/tab2.module').then(m => m.Tab2PageModule)
+        path: 'location',
+        loadChildren: () => import('../locations/locations.module').then(m => m.LocationsPageModule)
       },
       {
-        path: 'tab3',
-        loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)
+        path: 'episodes',
+        loadChildren: () => import('../episodes/episodes.module').then(m => m.EpisodesPageModule)
+      },
+      {
+        path: 'abount',
+        loadChildren: () => import('../abount/abount.module').then(m => m.AbountPageModule)
       },
       {
         path: '',
