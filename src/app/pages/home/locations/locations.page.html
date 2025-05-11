@@ -1,17 +1,24 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      Locations
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="location__title">
+    <h2>Select</h2>
+  </div>
 
-  <app-home name="Tab 2 page"></app-home>
+
+  <div *ngIf="locations" class="location__card">
+    <div *ngFor="let loc of locations.results" class="location__card__item">
+      <ion-row (click)="selectLocation(loc)" >
+        <ion-icon name="planet-outline"></ion-icon>
+        <p>name: {{loc.name}}</p>
+        <p>type: {{loc.type}}</p>
+      </ion-row>
+    </div>
+  </div>
 </ion-content>

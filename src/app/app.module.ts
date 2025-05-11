@@ -7,12 +7,12 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {HttpClientModule} from "@angular/common/http";
-import {CaracterService} from "../services/caracter.service";
+import {HomeServices} from "../services/home.services";
 
 @NgModule({
   declarations: [AppComponent],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }, CaracterService],
+  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }, HomeServices],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

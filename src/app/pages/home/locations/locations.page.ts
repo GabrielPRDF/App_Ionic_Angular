@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {HomeServices} from "../../../../services/home.services";
 
 @Component({
   selector: 'app-locations',
@@ -7,7 +8,21 @@ import { Component } from '@angular/core';
   standalone: false,
 })
 export class LocationsPage {
+  public locations: any;
 
-  constructor() {}
+  constructor(
+    private service: HomeServices
+  ) {
+    this.getLocation();
+  }
+
+  async getLocation(){
+    this.locations = await this.service.getLocations();
+    console.log(this.locations);
+  }
+
+  selectLocation(loc: any){
+    console.log(loc);
+  }
 
 }
