@@ -9,6 +9,12 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class CaracterPage implements OnInit {
   public parametro: any;
+  public name: String = "";
+  public gender: String = "";
+  public imgPerfil: String = "";
+  public location: any;
+  public status: String = "";
+
 
   constructor(
     private router: Router,
@@ -17,7 +23,16 @@ export class CaracterPage implements OnInit {
 
   ngOnInit() {
     this.parametro = JSON.stringify(this.router.getCurrentNavigation()?.extras);
-    console.log(this.parametro);
+    console.log("Dados", this.parametro);
+    this.setParametros(JSON.parse(this.parametro));
+  }
+
+  public setParametros(dados : any) {
+    this.name = dados.name;
+    this.gender = dados.gender;
+    this.imgPerfil = dados.image;
+    this.location = dados.location;
+    this.status = dados.status;
   }
 
   voltar(){
