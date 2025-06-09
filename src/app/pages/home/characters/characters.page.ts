@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {HomeServices} from "../../../../services/home.services";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-character',
@@ -11,7 +12,8 @@ export class CharactersPage {
   public caracters: any;
 
   constructor(
-    private service: HomeServices
+    private service: HomeServices,
+    private router: Router
   ) {
     this.getCaracter();
   }
@@ -23,5 +25,6 @@ export class CharactersPage {
 
   selectCaracter(carac: any){
     console.log(carac);
+    this.router.navigateByUrl('/caracter', carac);
   }
 }
