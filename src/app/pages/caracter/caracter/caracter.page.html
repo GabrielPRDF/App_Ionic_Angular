@@ -5,11 +5,10 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">caracter</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  <p>{{ parametro }}</p>
+  <img [src]="imgPerfil">
+  <p>{{ name }}</p>
+  <p>{{ gender }}</p>
+  <p>{{ location.name }}</p>
+  <p>{{ status }}</p>
   <ion-button (click)="voltar()">Voltar</ion-button>
 </ion-content>
