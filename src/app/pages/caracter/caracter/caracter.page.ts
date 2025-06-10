@@ -14,6 +14,7 @@ export class CaracterPage implements OnInit {
   public imgPerfil: String = "";
   public location: any;
   public status: String = "";
+  public species: String = "";
 
 
   constructor(
@@ -33,6 +34,7 @@ export class CaracterPage implements OnInit {
     this.imgPerfil = dados.image;
     this.location = dados.location;
     this.status = dados.status;
+    this.species = dados.species;
   }
 
   voltar(){
