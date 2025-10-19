@@ -18,6 +18,8 @@ log.txt
 /coverage
 /.vscode
 .vscode
+.vscode/extensions.json
+/.vscode/extensions.json
 
 # Ionic
 /.ionic
