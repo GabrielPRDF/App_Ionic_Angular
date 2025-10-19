@@ -1,3 +1,5 @@
+@import "../../../../theme/variables.scss";
+
 ion-header {
   ion-title {
     font-size: 2rem;
@@ -15,6 +17,7 @@ ion-header {
       text-align: center;
       font-size: 2rem;
       font-weight: bolder;
+      color: var(--color-text);
     }
   }
 
