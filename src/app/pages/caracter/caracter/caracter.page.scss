@@ -1,0 +1,15 @@
+.caracter {
+    &__perfil {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        img {
+            border-radius: 50%;
+        }
+    }
+
+    &__body {
+        height: max-content;
+    }
+}

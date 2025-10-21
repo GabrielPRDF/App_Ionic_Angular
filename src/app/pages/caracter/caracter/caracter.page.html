@@ -5,11 +5,17 @@
 </ion-header>
 
 <ion-content [fullscreen]="true" *ngIf="name">
-  <img [src]="imgPerfil" class="avatar">
-  <p>{{ name }}</p>
-  <p>{{ gender }}</p>
-  <p>{{ location.name }}</p>
-  <p>{{ status }}</p>
-  <p>{{ species }}</p>
-  <ion-button (click)="voltar()">Voltar</ion-button>
+  <div class="caracter__perfil">
+    <img [src]="imgPerfil" class="avatar">
+  </div>
+  <div class="caracter__body">
+    <p>{{ name }}</p>
+    <p>{{ gender }}</p>
+    <p>{{ location.name }}</p>
+    <p>{{ status }}</p>
+    <p>{{ species }}</p>
+  </div>
+  <footer>
+    <ion-button (click)="voltar()">Voltar</ion-button>
+  </footer>
 </ion-content>
