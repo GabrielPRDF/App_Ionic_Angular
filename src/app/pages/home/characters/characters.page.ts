@@ -20,11 +20,11 @@ export class CharactersPage {
 
   async getCaracter(){
     this.caracters = await this.service.getCaracter();
-    console.log(this.caracters);
+    // console.log(this.caracters);
   }
 
   selectCaracter(carac: any){
-    console.log(carac);
+    // console.log(carac);
     this.router.navigateByUrl('/caracter', carac);
   }
 }

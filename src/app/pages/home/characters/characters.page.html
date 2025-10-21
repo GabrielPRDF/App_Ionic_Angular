@@ -7,11 +7,6 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <div class="caracter__title">
-    <h2>Select</h2>
-  </div>
-
-
   <div *ngIf="caracters" class="caracter__card">
     <div *ngFor="let carac of caracters.results">
       <div (click)="selectCaracter(carac)" class="caracter__card__item">
