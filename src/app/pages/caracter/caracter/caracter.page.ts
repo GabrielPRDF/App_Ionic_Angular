@@ -19,12 +19,11 @@ export class CaracterPage implements OnInit {
 
   constructor(
     private router: Router,
-    private route: ActivatedRoute
   ) { }
 
   ngOnInit() {
     this.parametro = JSON.stringify(this.router.getCurrentNavigation()?.extras);
-    console.log("Dados", this.parametro);
+    // console.log("Dados", this.parametro);
     this.setParametros(JSON.parse(this.parametro));
   }
 

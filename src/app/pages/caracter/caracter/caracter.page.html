@@ -1,11 +1,11 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>caracter</ion-title>
+  <ion-toolbar *ngIf="name">
+    <ion-title>{{ name }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <img [src]="imgPerfil">
+<ion-content [fullscreen]="true" *ngIf="name">
+  <img [src]="imgPerfil" class="avatar">
   <p>{{ name }}</p>
   <p>{{ gender }}</p>
   <p>{{ location.name }}</p>
